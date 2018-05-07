@@ -1,0 +1,6 @@
+# Clock and Reset
+NET "clock" TNM_NET = "BOARD_CLK";
+TIMESPEC "TS_BOARD_CLK" = PERIOD "BOARD_CLK" 14.0 ns HIGH 50 % INPUT_JITTER 200.0ps;
+
+# FALSE PATH constraints
+PIN "reset" TIG;

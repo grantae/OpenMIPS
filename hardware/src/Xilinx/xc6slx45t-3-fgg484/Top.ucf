@@ -1,0 +1,13 @@
+
+# Clock and Reset
+NET "clock_50MHz" TNM_NET = "BOARD_CLK";
+TIMESPEC "TS_BOARD_CLK" = PERIOD "BOARD_CLK" 20.0 ns HIGH 50 % INPUT_JITTER 200.0ps;
+
+# FALSE PATH constraints 
+PIN "reset_p" TIG;
+
+# UART
+
+# General-Purpose LEDs
+
+# General Purpose Switches

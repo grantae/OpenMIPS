@@ -1,0 +1,70 @@
+# MIPS Top (Processor + Caches)
+src/MIPS32/MIPS32.v
+
+# Caches
+src/MIPS32/Cache/ICache/InstructionCache_8KB.v
+src/MIPS32/Cache/ICache/Set_RO_128x256.v
+src/MIPS32/Cache/ICache/TagFlagRam_RO_256.v
+src/MIPS32/Cache/DCache/DataCache_2KB.v
+src/MIPS32/Cache/DCache/Set_RW_128x64.v
+src/MIPS32/Cache/DCache/TagFlagRam_RW_64.v
+
+# Processor
+src/MIPS32/Core/Processor.v
+src/MIPS32/Core/Add.v
+src/MIPS32/Core/ALU.v
+src/MIPS32/Core/Control.v
+src/MIPS32/Core/Divide.v
+src/MIPS32/Core/ReadDataControl.v
+src/MIPS32/Core/RegisterFile.v
+src/MIPS32/Core/TrapDetect.v
+src/MIPS32/Core/MemControl.v
+src/MIPS32/Core/Hazard_Detection.v
+src/MIPS32/Core/CPZero.v
+src/MIPS32/Core/CP0_Registers.v
+#src/MIPS32/Core/CP0_Exceptions.v
+src/MIPS32/Core/TLB_16.v
+src/MIPS32/Core/TLB_CAM_DP_16.v
+src/MIPS32/Core/TLB_CAM_Entry_DP.v
+src/MIPS32/Core/EvenOddPage.v
+src/MIPS32/Core/Compare.v
+src/MIPS32/Core/F1_Stage.v
+src/MIPS32/Core/F2_Stage.v
+src/MIPS32/Core/D1_Stage.v
+src/MIPS32/Core/D2_Stage.v
+src/MIPS32/Core/X1_Stage.v
+src/MIPS32/Core/M1_Stage.v
+src/MIPS32/Core/M2_Stage.v
+src/MIPS32/Core/W1_Stage.v
+
+# DSP Fused Multiply/Add (Processor)
+src/Xilinx/xc6slx45t-3-fgg484/MAddSub/DSP_MAddSub_32x32x64.v
+src/Xilinx/xc6slx45t-3-fgg484/MAddSub/DSP_Mult_32x32_BLAL.v
+src/Xilinx/xc6slx45t-3-fgg484/MAddSub/DSP_Mult_32x32_BLAH.v
+src/Xilinx/xc6slx45t-3-fgg484/MAddSub/DSP_Mult_32x32_BHAL.v
+src/Xilinx/xc6slx45t-3-fgg484/MAddSub/DSP_Mult_32x32_BHAH.v
+src/Xilinx/xc6slx45t-3-fgg484/MAddSub/DSP_AddSub_64x64_Lo.v
+src/Xilinx/xc6slx45t-3-fgg484/MAddSub/DSP_AddSub_64x64_Hi.v
+
+# SoC
+#src/Xilinx/xc6slx45t-3-fgg484/Clocks/Clock_50MHz_to_62p5MHz.v
+src/Xilinx/xc6slx45t-3-fgg484/MIPS32.ucf
+
+# Common
+src/Common/RAM/RAM_SP_ZI.v
+src/Common/RAM/RAM_TDP.v
+src/Common/RAM/RAM_TDP_ZI.v
+src/Common/RAM/RAM_TDP_UI.v
+src/Common/SRAM.v
+src/Common/DFF_SRE.v
+src/Common/DFF_E.v
+src/Common/Register.v
+src/Common/Mux2.v
+src/Common/Mux4.v
+src/Common/FIFO/FIFO.v
+src/Common/PriorityEncoder_16x4.v
+
+# Xilinx cores
+src/Xilinx/xc5vlx110t-1-ff1136/Cores/BRAM_32x1024_SDP/BRAM_32x1024_SDP.xco
+src/Xilinx/xc5vlx110t-1-ff1136/Cores/BRAM_32x256_128x64_TDP_BE/BRAM_32x256_128x64_TDP_BE.xco
+

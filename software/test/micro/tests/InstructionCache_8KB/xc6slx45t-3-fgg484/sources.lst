@@ -1,0 +1,10 @@
+*FILL*/MIPS32/Cache/ICache/InstructionCache_8KB.v
+*FILL*/MIPS32/Cache/ICache/Set_RO_128x256.v
+*FILL*/MIPS32/Cache/ICache/TagFlagRam_RO_256.v
+*FILL*/Common/DFF_E.v
+*FILL*/Common/DFF_SRE.v
+*FILL*/Common/RAM/RAM_SP_ZI.v
+*FILL*/Common/RAM/RAM_TDP.v
+*FILL*/SoC/MainMemory/MainMemory.v
+*FILL*/Xilinx/xc6slx45t-3-fgg484/Cores/BRAM_32x1024_SDP/BRAM_32x1024_SDP.xco
+tests/InstructionCache_8KB/InstructionCache_8KB_test.v

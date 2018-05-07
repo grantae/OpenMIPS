@@ -1,0 +1,1966 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/user/root/proj/mips32/ise/del_dcache/DataCache_2KB_test_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="DataCache_2KB_test" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="60" />
+   <wvobject fp_name="/DataCache_2KB_test/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DataCache_2KB_test/clock" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clock</obj_property>
+      <obj_property name="ObjectShortName">clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DataCache_2KB_test/Read_C" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">Read_C</obj_property>
+      <obj_property name="ObjectShortName">Read_C</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DataCache_2KB_test/uut/Write_C" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">Write_C[3:0]</obj_property>
+      <obj_property name="ObjectShortName">Write_C[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DataCache_2KB_test/DoCacheOp_C" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">DoCacheOp_C</obj_property>
+      <obj_property name="ObjectShortName">DoCacheOp_C</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DataCache_2KB_test/Ready_C" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">Ready_C</obj_property>
+      <obj_property name="ObjectShortName">Ready_C</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DataCache_2KB_test/VAddressIn_C" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">VAddressIn_C[9:0]</obj_property>
+      <obj_property name="ObjectShortName">VAddressIn_C[9:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DataCache_2KB_test/PAddressIn_C" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">PAddressIn_C[23:0]</obj_property>
+      <obj_property name="ObjectShortName">PAddressIn_C[23:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DataCache_2KB_test/PAddressValid_C" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">PAddressValid_C</obj_property>
+      <obj_property name="ObjectShortName">PAddressValid_C</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DataCache_2KB_test/CacheAttr_C" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">CacheAttr_C[2:0]</obj_property>
+      <obj_property name="ObjectShortName">CacheAttr_C[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DataCache_2KB_test/Stall_C" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">Stall_C</obj_property>
+      <obj_property name="ObjectShortName">Stall_C</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DataCache_2KB_test/DataOut_C" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">DataOut_C[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DataOut_C[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DataCache_2KB_test/uut/DataIn_C" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">DataIn_C[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DataIn_C[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DataCache_2KB_test/CacheOp_C" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">CacheOp_C[2:0]</obj_property>
+      <obj_property name="ObjectShortName">CacheOp_C[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DataCache_2KB_test/CacheOpData_C" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">CacheOpData_C[27:0]</obj_property>
+      <obj_property name="ObjectShortName">CacheOpData_C[27:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DataCache_2KB_test/uut/state" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">state[3:0]</obj_property>
+      <obj_property name="ObjectShortName">state[3:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DataCache_2KB_test/ReadLine_M" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ReadLine_M</obj_property>
+      <obj_property name="ObjectShortName">ReadLine_M</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DataCache_2KB_test/ReadWord_M" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">ReadWord_M</obj_property>
+      <obj_property name="ObjectShortName">ReadWord_M</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DataCache_2KB_test/uut/LineOutReady_M" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">LineOutReady_M</obj_property>
+      <obj_property name="ObjectShortName">LineOutReady_M</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DataCache_2KB_test/uut/WordOutReady_M" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">WordOutReady_M</obj_property>
+      <obj_property name="ObjectShortName">WordOutReady_M</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DataCache_2KB_test/Address_M" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">Address_M[33:0]</obj_property>
+      <obj_property name="ObjectShortName">Address_M[33:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DataCache_2KB_test/DataIn_M" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">DataIn_M[31:0]</obj_property>
+      <obj_property name="ObjectShortName">DataIn_M[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DataCache_2KB_test/DataInOffset_M" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">DataInOffset_M[1:0]</obj_property>
+      <obj_property name="ObjectShortName">DataInOffset_M[1:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DataCache_2KB_test/Ready_M" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">Ready_M</obj_property>
+      <obj_property name="ObjectShortName">Ready_M</obj_property>
+   </wvobject>
+   <wvobject fp_name="group427" type="group">
+      <obj_property name="label">MainMemory</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/DataCache_2KB_test/mem/D_Address" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">D_Address[17:0]</obj_property>
+         <obj_property name="ObjectShortName">D_Address[17:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/mem/D_DataIn" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">D_DataIn[127:0]</obj_property>
+         <obj_property name="ObjectShortName">D_DataIn[127:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/mem/D_WordInReady" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">D_WordInReady</obj_property>
+         <obj_property name="ObjectShortName">D_WordInReady</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/mem/D_LineInReady" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">D_LineInReady</obj_property>
+         <obj_property name="ObjectShortName">D_LineInReady</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/mem/D_WordInBE" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">D_WordInBE[3:0]</obj_property>
+         <obj_property name="ObjectShortName">D_WordInBE[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/mem/D_ReadLine" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">D_ReadLine</obj_property>
+         <obj_property name="ObjectShortName">D_ReadLine</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/mem/D_ReadWord" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">D_ReadWord</obj_property>
+         <obj_property name="ObjectShortName">D_ReadWord</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/mem/D_DataOut" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">D_DataOut[31:0]</obj_property>
+         <obj_property name="ObjectShortName">D_DataOut[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/mem/D_DataOutOffset" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">D_DataOutOffset[1:0]</obj_property>
+         <obj_property name="ObjectShortName">D_DataOutOffset[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/mem/D_Ready" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">D_Ready</obj_property>
+         <obj_property name="ObjectShortName">D_Ready</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/mem/RAM_web" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">RAM_web</obj_property>
+         <obj_property name="ObjectShortName">RAM_web</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/mem/state_b" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">state_b[3:0]</obj_property>
+         <obj_property name="ObjectShortName">state_b[3:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/mem/RAM_addrb" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">RAM_addrb[15:0]</obj_property>
+         <obj_property name="ObjectShortName">RAM_addrb[15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/mem/d_mask" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">d_mask[127:0]</obj_property>
+         <obj_property name="ObjectShortName">d_mask[127:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/mem/RAM_dinb" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">RAM_dinb[127:0]</obj_property>
+         <obj_property name="ObjectShortName">RAM_dinb[127:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/mem/RAM_doutb" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">RAM_doutb[127:0]</obj_property>
+         <obj_property name="ObjectShortName">RAM_doutb[127:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/DataCache_2KB_test/uut/cond_wb_idx_wbinv" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">cond_wb_idx_wbinv</obj_property>
+      <obj_property name="ObjectShortName">cond_wb_idx_wbinv</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DataCache_2KB_test/uut/s_tag" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">s_tag[25:0]</obj_property>
+      <obj_property name="ObjectShortName">s_tag[25:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DataCache_2KB_test/uut/s_index_tag" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">s_index_tag[25:0]</obj_property>
+      <obj_property name="ObjectShortName">s_index_tag[25:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DataCache_2KB_test/uut/s_doCacheOp" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">s_doCacheOp</obj_property>
+      <obj_property name="ObjectShortName">s_doCacheOp</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DataCache_2KB_test/uut/s_cacheOp_sel_a" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">s_cacheOp_sel_a</obj_property>
+      <obj_property name="ObjectShortName">s_cacheOp_sel_a</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DataCache_2KB_test/uut/s_evict_e" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">s_evict_e</obj_property>
+      <obj_property name="ObjectShortName">s_evict_e</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DataCache_2KB_test/uut/s_set_select_a_e" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">s_set_select_a_e</obj_property>
+      <obj_property name="ObjectShortName">s_set_select_a_e</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DataCache_2KB_test/uut/s_valid_a_e" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">s_valid_a_e</obj_property>
+      <obj_property name="ObjectShortName">s_valid_a_e</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DataCache_2KB_test/uut/s_valid_b_e" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">s_valid_b_e</obj_property>
+      <obj_property name="ObjectShortName">s_valid_b_e</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DataCache_2KB_test/uut/s_valid_a_d" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">s_valid_a_d</obj_property>
+      <obj_property name="ObjectShortName">s_valid_a_d</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DataCache_2KB_test/uut/s_valid_b_d" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">s_valid_b_d</obj_property>
+      <obj_property name="ObjectShortName">s_valid_b_d</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DataCache_2KB_test/uut/s_dirty_a_e" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">s_dirty_a_e</obj_property>
+      <obj_property name="ObjectShortName">s_dirty_a_e</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DataCache_2KB_test/uut/s_dirty_b_e" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">s_dirty_b_e</obj_property>
+      <obj_property name="ObjectShortName">s_dirty_b_e</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DataCache_2KB_test/uut/s_cacheOp" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">s_cacheOp[2:0]</obj_property>
+      <obj_property name="ObjectShortName">s_cacheOp[2:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DataCache_2KB_test/uut/r_vaddr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">r_vaddr[9:0]</obj_property>
+      <obj_property name="ObjectShortName">r_vaddr[9:0]</obj_property>
+      <obj_property name="Radix">BINARYRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DataCache_2KB_test/uut/s_vaddr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">s_vaddr[9:0]</obj_property>
+      <obj_property name="ObjectShortName">s_vaddr[9:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="group412" type="group">
+      <obj_property name="label">TagA</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/TagFlagRam/Index" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">Index[5:0]</obj_property>
+         <obj_property name="ObjectShortName">Index[5:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/TagFlagRam/Tag_Cmp" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">Tag_Cmp[25:0]</obj_property>
+         <obj_property name="ObjectShortName">Tag_Cmp[25:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/TagFlagRam/Tag_Set" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">Tag_Set[25:0]</obj_property>
+         <obj_property name="ObjectShortName">Tag_Set[25:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/TagFlagRam/Write" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">Write</obj_property>
+         <obj_property name="ObjectShortName">Write</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/TagFlagRam/Valid" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">Valid</obj_property>
+         <obj_property name="ObjectShortName">Valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/TagFlagRam/Dirty" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">Dirty</obj_property>
+         <obj_property name="ObjectShortName">Dirty</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/TagFlagRam/MatchHit" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">MatchHit</obj_property>
+         <obj_property name="ObjectShortName">MatchHit</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/TagFlagRam/MatchValid" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">MatchValid</obj_property>
+         <obj_property name="ObjectShortName">MatchValid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/TagFlagRam/MatchDirty" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">MatchDirty</obj_property>
+         <obj_property name="ObjectShortName">MatchDirty</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group422" type="group">
+      <obj_property name="label">TagB</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_B/TagFlagRam/Index" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">Index[5:0]</obj_property>
+         <obj_property name="ObjectShortName">Index[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_B/TagFlagRam/Tag_Cmp" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">Tag_Cmp[25:0]</obj_property>
+         <obj_property name="ObjectShortName">Tag_Cmp[25:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_B/TagFlagRam/Tag_Set" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">Tag_Set[25:0]</obj_property>
+         <obj_property name="ObjectShortName">Tag_Set[25:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_B/TagFlagRam/Write" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">Write</obj_property>
+         <obj_property name="ObjectShortName">Write</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_B/TagFlagRam/Valid" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">Valid</obj_property>
+         <obj_property name="ObjectShortName">Valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_B/TagFlagRam/Dirty" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">Dirty</obj_property>
+         <obj_property name="ObjectShortName">Dirty</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_B/TagFlagRam/MatchHit" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">MatchHit</obj_property>
+         <obj_property name="ObjectShortName">MatchHit</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_B/TagFlagRam/MatchValid" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">MatchValid</obj_property>
+         <obj_property name="ObjectShortName">MatchValid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_B/TagFlagRam/MatchDirty" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">MatchDirty</obj_property>
+         <obj_property name="ObjectShortName">MatchDirty</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_B/TagFlagRam/dataIn" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">dataIn[27:0]</obj_property>
+         <obj_property name="ObjectShortName">dataIn[27:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_B/TagFlagRam/dataOut" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">dataOut[27:0]</obj_property>
+         <obj_property name="ObjectShortName">dataOut[27:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group402" type="group">
+      <obj_property name="label">SetA</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/Tag" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">Tag[25:0]</obj_property>
+         <obj_property name="ObjectShortName">Tag[25:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/IndexTag" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">IndexTag[25:0]</obj_property>
+         <obj_property name="ObjectShortName">IndexTag[25:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/Index" type="array" db_ref_id="1">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">Index[5:0]</obj_property>
+         <obj_property name="ObjectShortName">Index[5:0]</obj_property>
+         <obj_property name="label">Index[5:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/Offset" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">Offset[1:0]</obj_property>
+         <obj_property name="ObjectShortName">Offset[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/LineIndex" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">LineIndex[5:0]</obj_property>
+         <obj_property name="ObjectShortName">LineIndex[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/LineOffset" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">LineOffset[1:0]</obj_property>
+         <obj_property name="ObjectShortName">LineOffset[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/WordIn" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">WordIn[31:0]</obj_property>
+         <obj_property name="ObjectShortName">WordIn[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/WordOut" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">WordOut[31:0]</obj_property>
+         <obj_property name="ObjectShortName">WordOut[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/Hit" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">Hit</obj_property>
+         <obj_property name="ObjectShortName">Hit</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/Valid" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">Valid</obj_property>
+         <obj_property name="ObjectShortName">Valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/Dirty" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">Dirty</obj_property>
+         <obj_property name="ObjectShortName">Dirty</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/LineIn" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">LineIn[31:0]</obj_property>
+         <obj_property name="ObjectShortName">LineIn[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/LineOut" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">LineOut[127:0]</obj_property>
+         <obj_property name="ObjectShortName">LineOut[127:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/WriteWord" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">WriteWord[3:0]</obj_property>
+         <obj_property name="ObjectShortName">WriteWord[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/write_word_any" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">write_word_any</obj_property>
+         <obj_property name="ObjectShortName">write_word_any</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/ValidateLine" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">ValidateLine</obj_property>
+         <obj_property name="ObjectShortName">ValidateLine</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/InvalidateLine" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">InvalidateLine</obj_property>
+         <obj_property name="ObjectShortName">InvalidateLine</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/FillLine" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">FillLine</obj_property>
+         <obj_property name="ObjectShortName">FillLine</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/StoreTag" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">StoreTag</obj_property>
+         <obj_property name="ObjectShortName">StoreTag</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/StoreTagData" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">StoreTagData[27:0]</obj_property>
+         <obj_property name="ObjectShortName">StoreTagData[27:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group381" type="group">
+      <obj_property name="label">SetB</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_B/Tag" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">Tag[25:0]</obj_property>
+         <obj_property name="ObjectShortName">Tag[25:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_B/IndexTag" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">IndexTag[25:0]</obj_property>
+         <obj_property name="ObjectShortName">IndexTag[25:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_B/Index" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">Index[5:0]</obj_property>
+         <obj_property name="ObjectShortName">Index[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_B/Offset" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">Offset[1:0]</obj_property>
+         <obj_property name="ObjectShortName">Offset[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_B/LineIndex" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">LineIndex[5:0]</obj_property>
+         <obj_property name="ObjectShortName">LineIndex[5:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_B/LineOffset" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">LineOffset[1:0]</obj_property>
+         <obj_property name="ObjectShortName">LineOffset[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_B/WordIn" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">WordIn[31:0]</obj_property>
+         <obj_property name="ObjectShortName">WordIn[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_B/WordOut" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">WordOut[31:0]</obj_property>
+         <obj_property name="ObjectShortName">WordOut[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_B/Hit" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">Hit</obj_property>
+         <obj_property name="ObjectShortName">Hit</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_B/Valid" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">Valid</obj_property>
+         <obj_property name="ObjectShortName">Valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_B/Dirty" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">Dirty</obj_property>
+         <obj_property name="ObjectShortName">Dirty</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_B/LineIn" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">LineIn[31:0]</obj_property>
+         <obj_property name="ObjectShortName">LineIn[31:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_B/LineOut" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">LineOut[127:0]</obj_property>
+         <obj_property name="ObjectShortName">LineOut[127:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_B/WriteWord" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">WriteWord[3:0]</obj_property>
+         <obj_property name="ObjectShortName">WriteWord[3:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_B/ValidateLine" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">ValidateLine</obj_property>
+         <obj_property name="ObjectShortName">ValidateLine</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_B/InvalidateLine" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">InvalidateLine</obj_property>
+         <obj_property name="ObjectShortName">InvalidateLine</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_B/FillLine" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">FillLine</obj_property>
+         <obj_property name="ObjectShortName">FillLine</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_B/StoreTag" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">StoreTag</obj_property>
+         <obj_property name="ObjectShortName">StoreTag</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_B/StoreTagData" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">StoreTagData[27:0]</obj_property>
+         <obj_property name="ObjectShortName">StoreTagData[27:0]</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/DataCache_2KB_test/uut/using_delay_data" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">using_delay_data</obj_property>
+      <obj_property name="ObjectShortName">using_delay_data</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DataCache_2KB_test/uut/s_hit_e" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">s_hit_e</obj_property>
+      <obj_property name="ObjectShortName">s_hit_e</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DataCache_2KB_test/uut/s_set_select_a_e" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">s_set_select_a_e</obj_property>
+      <obj_property name="ObjectShortName">s_set_select_a_e</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DataCache_2KB_test/uut/s_hit_data_e" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">s_hit_data_e[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s_hit_data_e[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DataCache_2KB_test/uut/s_hit_data_d" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">s_hit_data_d[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s_hit_data_d[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DataCache_2KB_test/uut/s_vaddr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">s_vaddr[9:0]</obj_property>
+      <obj_property name="ObjectShortName">s_vaddr[9:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DataCache_2KB_test/uut/new_request" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">new_request</obj_property>
+      <obj_property name="ObjectShortName">new_request</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DataCache_2KB_test/uut/s_uncacheable" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">s_uncacheable</obj_property>
+      <obj_property name="ObjectShortName">s_uncacheable</obj_property>
+   </wvobject>
+   <wvobject fp_name="group1131" type="group">
+      <obj_property name="label">TagFlagRamA</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/TagFlagRam/clock" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">clock</obj_property>
+         <obj_property name="ObjectShortName">clock</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/TagFlagRam/reset" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">reset</obj_property>
+         <obj_property name="ObjectShortName">reset</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/TagFlagRam/Index" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">Index[5:0]</obj_property>
+         <obj_property name="ObjectShortName">Index[5:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/TagFlagRam/Tag_Cmp" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">Tag_Cmp[25:0]</obj_property>
+         <obj_property name="ObjectShortName">Tag_Cmp[25:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/TagFlagRam/Tag_Set" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">Tag_Set[25:0]</obj_property>
+         <obj_property name="ObjectShortName">Tag_Set[25:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/TagFlagRam/Write" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">Write</obj_property>
+         <obj_property name="ObjectShortName">Write</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/TagFlagRam/Valid" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">Valid</obj_property>
+         <obj_property name="ObjectShortName">Valid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/TagFlagRam/MatchHit" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">MatchHit</obj_property>
+         <obj_property name="ObjectShortName">MatchHit</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/TagFlagRam/MatchValid" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">MatchValid</obj_property>
+         <obj_property name="ObjectShortName">MatchValid</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/TagFlagRam/dataIn" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">dataIn[27:0]</obj_property>
+         <obj_property name="ObjectShortName">dataIn[27:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/TagFlagRam/dataOut" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">dataOut[27:0]</obj_property>
+         <obj_property name="ObjectShortName">dataOut[27:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">memory[0:255,31:0]</obj_property>
+      <obj_property name="ObjectShortName">memory[0:255,31:0]</obj_property>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[0]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[0,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[0,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[1]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[1,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[1,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[2]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[2,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[2,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[3]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[3,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[3,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[4]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[4,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[4,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[5]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[5,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[5,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[6]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[6,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[6,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[7]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[7,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[7,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[8]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[8,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[8,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[9]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[9,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[9,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[10]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[10,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[10,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[11]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[11,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[11,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[12]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[12,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[12,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[13]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[13,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[13,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[14]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[14,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[14,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[15]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[15,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[15,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[16]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[16,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[16,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[17]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[17,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[17,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[18]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[18,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[18,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[19]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[19,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[19,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[20]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[20,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[20,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[21]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[21,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[21,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[22]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[22,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[22,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[23]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[23,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[23,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[24]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[24,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[24,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[25]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[25,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[25,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[26]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[26,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[26,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[27]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[27,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[27,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[28]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[28,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[28,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[29]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[29,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[29,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[30]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[30,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[30,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[31]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[31,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[31,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[32]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[32,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[32,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[33]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[33,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[33,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[34]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[34,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[34,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[35]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[35,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[35,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[36]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[36,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[36,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[37]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[37,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[37,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[38]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[38,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[38,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[39]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[39,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[39,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[40]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[40,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[40,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[41]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[41,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[41,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[42]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[42,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[42,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[43]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[43,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[43,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[44]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[44,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[44,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[45]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[45,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[45,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[46]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[46,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[46,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[47]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[47,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[47,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[48]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[48,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[48,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[49]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[49,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[49,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[50]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[50,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[50,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[51]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[51,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[51,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[52]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[52,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[52,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[53]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[53,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[53,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[54]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[54,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[54,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[55]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[55,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[55,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[56]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[56,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[56,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[57]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[57,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[57,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[58]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[58,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[58,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[59]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[59,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[59,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[60]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[60,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[60,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[61]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[61,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[61,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[62]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[62,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[62,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[63]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[63,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[63,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[64]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[64,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[64,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[65]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[65,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[65,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[66]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[66,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[66,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[67]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[67,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[67,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[68]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[68,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[68,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[69]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[69,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[69,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[70]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[70,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[70,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[71]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[71,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[71,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[72]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[72,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[72,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[73]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[73,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[73,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[74]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[74,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[74,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[75]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[75,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[75,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[76]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[76,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[76,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[77]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[77,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[77,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[78]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[78,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[78,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[79]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[79,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[79,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[80]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[80,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[80,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[81]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[81,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[81,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[82]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[82,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[82,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[83]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[83,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[83,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[84]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[84,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[84,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[85]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[85,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[85,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[86]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[86,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[86,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[87]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[87,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[87,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[88]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[88,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[88,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[89]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[89,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[89,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[90]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[90,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[90,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[91]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[91,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[91,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[92]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[92,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[92,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[93]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[93,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[93,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[94]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[94,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[94,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[95]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[95,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[95,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[96]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[96,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[96,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[97]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[97,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[97,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[98]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[98,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[98,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[99]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[99,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[99,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[100]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[100,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[100,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[101]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[101,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[101,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[102]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[102,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[102,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[103]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[103,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[103,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[104]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[104,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[104,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[105]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[105,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[105,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[106]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[106,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[106,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[107]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[107,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[107,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[108]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[108,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[108,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[109]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[109,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[109,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[110]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[110,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[110,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[111]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[111,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[111,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[112]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[112,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[112,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[113]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[113,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[113,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[114]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[114,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[114,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[115]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[115,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[115,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[116]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[116,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[116,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[117]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[117,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[117,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[118]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[118,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[118,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[119]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[119,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[119,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[120]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[120,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[120,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[121]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[121,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[121,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[122]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[122,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[122,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[123]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[123,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[123,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[124]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[124,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[124,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[125]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[125,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[125,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[126]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[126,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[126,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[127]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[127,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[127,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[128]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[128,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[128,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[129]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[129,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[129,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[130]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[130,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[130,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[131]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[131,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[131,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[132]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[132,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[132,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[133]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[133,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[133,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[134]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[134,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[134,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[135]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[135,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[135,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[136]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[136,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[136,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[137]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[137,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[137,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[138]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[138,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[138,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[139]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[139,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[139,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[140]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[140,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[140,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[141]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[141,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[141,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[142]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[142,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[142,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[143]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[143,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[143,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[144]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[144,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[144,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[145]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[145,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[145,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[146]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[146,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[146,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[147]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[147,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[147,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[148]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[148,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[148,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[149]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[149,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[149,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[150]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[150,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[150,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[151]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[151,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[151,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[152]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[152,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[152,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[153]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[153,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[153,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[154]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[154,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[154,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[155]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[155,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[155,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[156]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[156,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[156,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[157]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[157,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[157,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[158]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[158,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[158,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[159]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[159,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[159,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[160]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[160,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[160,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[161]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[161,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[161,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[162]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[162,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[162,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[163]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[163,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[163,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[164]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[164,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[164,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[165]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[165,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[165,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[166]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[166,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[166,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[167]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[167,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[167,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[168]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[168,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[168,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[169]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[169,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[169,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[170]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[170,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[170,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[171]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[171,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[171,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[172]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[172,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[172,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[173]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[173,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[173,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[174]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[174,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[174,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[175]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[175,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[175,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[176]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[176,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[176,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[177]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[177,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[177,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[178]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[178,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[178,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[179]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[179,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[179,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[180]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[180,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[180,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[181]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[181,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[181,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[182]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[182,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[182,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[183]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[183,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[183,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[184]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[184,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[184,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[185]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[185,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[185,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[186]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[186,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[186,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[187]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[187,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[187,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[188]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[188,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[188,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[189]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[189,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[189,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[190]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[190,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[190,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[191]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[191,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[191,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[192]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[192,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[192,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[193]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[193,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[193,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[194]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[194,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[194,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[195]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[195,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[195,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[196]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[196,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[196,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[197]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[197,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[197,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[198]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[198,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[198,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[199]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[199,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[199,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[200]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[200,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[200,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[201]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[201,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[201,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[202]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[202,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[202,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[203]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[203,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[203,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[204]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[204,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[204,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[205]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[205,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[205,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[206]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[206,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[206,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[207]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[207,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[207,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[208]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[208,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[208,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[209]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[209,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[209,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[210]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[210,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[210,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[211]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[211,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[211,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[212]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[212,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[212,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[213]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[213,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[213,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[214]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[214,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[214,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[215]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[215,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[215,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[216]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[216,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[216,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[217]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[217,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[217,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[218]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[218,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[218,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[219]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[219,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[219,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[220]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[220,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[220,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[221]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[221,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[221,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[222]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[222,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[222,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[223]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[223,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[223,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[224]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[224,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[224,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[225]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[225,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[225,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[226]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[226,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[226,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[227]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[227,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[227,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[228]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[228,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[228,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[229]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[229,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[229,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[230]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[230,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[230,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[231]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[231,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[231,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[232]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[232,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[232,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[233]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[233,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[233,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[234]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[234,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[234,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[235]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[235,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[235,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[236]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[236,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[236,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[237]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[237,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[237,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[238]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[238,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[238,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[239]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[239,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[239,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[240]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[240,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[240,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[241]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[241,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[241,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[242]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[242,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[242,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[243]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[243,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[243,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[244]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[244,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[244,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[245]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[245,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[245,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[246]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[246,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[246,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[247]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[247,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[247,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[248]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[248,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[248,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[249]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[249,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[249,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[250]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[250,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[250,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[251]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[251,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[251,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[252]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[252,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[252,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[253]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[253,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[253,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[254]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[254,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[254,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/uut/Set_A/DataRam/inst/\native_mem_module.blk_mem_gen_v7_3_inst /memory[255]" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">[255,31:0]</obj_property>
+         <obj_property name="ObjectShortName">memory[255,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group48" type="group">
+      <obj_property name="label">Constants</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/DataCache_2KB_test/cache" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">cache[0:0]</obj_property>
+         <obj_property name="ObjectShortName">cache[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/nocache" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">nocache[0:0]</obj_property>
+         <obj_property name="ObjectShortName">nocache[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/valid" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">valid[0:0]</obj_property>
+         <obj_property name="ObjectShortName">valid[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/invalid" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">invalid[0:0]</obj_property>
+         <obj_property name="ObjectShortName">invalid[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/hit" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">hit[0:0]</obj_property>
+         <obj_property name="ObjectShortName">hit[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/miss" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">miss[0:0]</obj_property>
+         <obj_property name="ObjectShortName">miss[0:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/VAddr1w0" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">VAddr1w0[11:0]</obj_property>
+         <obj_property name="ObjectShortName">VAddr1w0[11:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/VAddr1w1" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">VAddr1w1[11:0]</obj_property>
+         <obj_property name="ObjectShortName">VAddr1w1[11:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/VAddr1w2" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">VAddr1w2[11:0]</obj_property>
+         <obj_property name="ObjectShortName">VAddr1w2[11:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/DataCache_2KB_test/VAddr1w3" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">VAddr1w3[11:0]</obj_property>
+         <obj_property name="ObjectShortName">VAddr1w3[11:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/DataCache_2KB_test/uut/WB_Empty" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">WB_Empty</obj_property>
+      <obj_property name="ObjectShortName">WB_Empty</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DataCache_2KB_test/uut/s_vaddr" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">s_vaddr[9:0]</obj_property>
+      <obj_property name="ObjectShortName">s_vaddr[9:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DataCache_2KB_test/uut/WB_EnQ" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">WB_EnQ</obj_property>
+      <obj_property name="ObjectShortName">WB_EnQ</obj_property>
+   </wvobject>
+   <wvobject fp_name="/DataCache_2KB_test/uut/WB_DataIn" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">WB_DataIn[160:0]</obj_property>
+      <obj_property name="ObjectShortName">WB_DataIn[160:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+</wave_config>

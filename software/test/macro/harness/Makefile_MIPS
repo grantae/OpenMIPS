@@ -1,0 +1,177 @@
+###############################################################################
+#                                                                             #
+#                           General Makefile for C                            #
+#                       Modified for MIPS32 Crosstools                        #
+#           Copyright (C) 2014 Grant Ayers <ayers@cs.stanford.edu>            #
+#           Hosted at GitHub: https://github.com/grantea/makefiles            #
+#                                                                             #
+# This file is free software distributed under the BSD license. See LICENSE   #
+# for more information.                                                       #
+#                                                                             #
+# This is a single-target, general-purpose Makefile designed for C projects   #
+# which use the GNU GCC MIPS32 cross-compiler and tools.                      #
+#                                                                             #
+# Set the program name, source root directory, path to the MIPS compiler      #
+# toolchain, and any desired build options. All dependencies (including       #
+# header file changes) will be handled automatically.                         #
+#                                                                             #
+###############################################################################
+
+
+#---------- Basic settings ----------#
+SOURCE_BASE  ?= src
+BUILD_BASE   ?= build
+ARCHITECTURE := mipsisa32-elf
+APP_BASE     := $(SOURCE_BASE)/app
+KHI_BASE     := $(SOURCE_BASE)/os/khi
+KLO_BASE     := $(SOURCE_BASE)/os/klo
+QUIET        ?= no
+BIG_ENDIAN   ?= yes
+DEBUG        ?= no
+
+
+#---------- Source file names ----------#
+CSRC_EXTS    := .c
+MASM_EXTS    := .asm
+LD_EXT       := .ls
+
+
+#---------- Toolchain Location ----------#
+MIPS_BASE    ?= ../toolchain/mips_tc
+UTIL_BASE    ?= ../util
+MIPS_BIN     := $(MIPS_BASE)/bin
+MIPS_CC      := $(MIPS_BIN)/$(ARCHITECTURE)-gcc
+
+
+#---------- Compilation and linking ----------#
+FLAGS_LE     := -EL -Wa,--defsym,little_endian=1
+FLAGS_BE     := -EB -Wa,--defsym,big_endian=1
+FLAGS_ENDIAN := $(if $(filter yes,$(BIG_ENDIAN)),$(FLAGS_BE),$(FLAGS_LE))
+FLAGS_DEBUG  := $(if $(filter yes,$(DEBUG)),-g)
+FLAGS_ARCH   := -march=mips32 -msoft-float -mno-mips16 -mno-branch-likely -mgpopt $(FLAGS_ENDIAN) $(FLAGS_DEBUG)
+FLAGS_LANG   := -Wall -Wextra -Wfatal-errors -pedantic -std=gnu99
+FLAGS_OPT    := -O2 -pipe
+LD_LINK      := -nostdlib -nostartfiles -static
+LD_LIBS      := -lm -lc -lgcc
+INC_DIRS     := -I$(SOURCE_BASE)
+RADIX_B      := 16
+PAD_KB_APP   := 256
+PAD_KB_KHI   := 16
+PAD_KB_KLO   := 16
+
+#---------- No need to modify below ----------#
+
+APP           := $(BUILD_BASE)/app
+KHI           := $(BUILD_BASE)/khi
+KLO           := $(BUILD_BASE)/klo
+SRC_DIRS_APP  := $(shell find $(APP_BASE) -type d -print)
+BLD_DIRS_APP  := $(addprefix $(BUILD_BASE)/,$(SRC_DIRS_APP))
+SRC_DIRS_KHI  := $(shell find $(KHI_BASE) -type d -print)
+BLD_DIRS_KHI  := $(addprefix $(BUILD_BASE)/,$(SRC_DIRS_KHI))
+SRC_DIRS_KLO  := $(shell find $(KLO_BASE) -type d -print)
+BLD_DIRS_KLO  := $(addprefix $(BUILD_BASE)/,$(SRC_DIRS_KLO))
+BLD_DIRS      := $(BLD_DIRS_APP) $(BLD_DIRS_KHI) $(BLD_DIRS_KLO)
+CSRC_SRCS_APP := $(foreach DIR,$(SRC_DIRS_APP),$(foreach EXT,$(CSRC_EXTS),$(wildcard $(DIR)/*$(EXT))))
+MASM_SRCS_APP := $(foreach DIR,$(SRC_DIRS_APP),$(foreach EXT,$(MASM_EXTS),$(wildcard $(DIR)/*$(EXT))))
+CSRC_SRCS_KHI := $(foreach DIR,$(SRC_DIRS_KHI),$(foreach EXT,$(CSRC_EXTS),$(wildcard $(DIR)/*$(EXT))))
+MASM_SRCS_KHI := $(foreach DIR,$(SRC_DIRS_KHI),$(foreach EXT,$(MASM_EXTS),$(wildcard $(DIR)/*$(EXT))))
+CSRC_SRCS_KLO := $(foreach DIR,$(SRC_DIRS_KLO),$(foreach EXT,$(CSRC_EXTS),$(wildcard $(DIR)/*$(EXT))))
+MASM_SRCS_KLO := $(foreach DIR,$(SRC_DIRS_KLO),$(foreach EXT,$(MASM_EXTS),$(wildcard $(DIR)/*$(EXT))))
+CSRC_OBJS_APP := $(addsuffix .o,$(addprefix $(BUILD_BASE)/,$(CSRC_SRCS_APP)))
+MASM_OBJS_APP := $(addsuffix .o,$(addprefix $(BUILD_BASE)/,$(MASM_SRCS_APP)))
+CSRC_DEPS_APP := $(CSRC_OBJS_APP:.o=.d)
+CSRC_OBJS_KHI := $(addsuffix .o,$(addprefix $(BUILD_BASE)/,$(CSRC_SRCS_KHI)))
+MASM_OBJS_KHI := $(addsuffix .o,$(addprefix $(BUILD_BASE)/,$(MASM_SRCS_KHI)))
+CSRC_DEPS_KHI := $(CSRC_OBJS_KHI:.o=.d)
+CSRC_OBJS_KLO := $(addsuffix .o,$(addprefix $(BUILD_BASE)/,$(CSRC_SRCS_KLO)))
+MASM_OBJS_KLO := $(addsuffix .o,$(addprefix $(BUILD_BASE)/,$(MASM_SRCS_KLO)))
+CSRC_DEPS_KLO := $(CSRC_OBJS_KLO:.o=.d)
+CSRC_OBJS     := $(CSRC_OBJS_APP) $(CSRC_OBJS_KHI) $(CSRC_OBJS_KLO)
+MASM_OBJS     := $(MASM_OBJS_APP) $(MASM_OBJS_KHI) $(MASM_OBJS_KLO)
+CSRC_DEPS     := $(CSRC_DEPS_APP) $(CSRC_DEPS_KHI) $(CSRC_DEPS_KLO)
+LD_SCRIPT_APP := $(shell find $(APP_BASE) -name "*$(LD_EXT)" -print)
+LD_FLAGS_APP  := $(FLAGS_ARCH) $(LD_LINK) $(LD_LIBS) -T $(LD_SCRIPT_APP) -Wl,-Map,$(APP).map
+LD_SCRIPT_KHI := $(shell find $(KHI_BASE) -name "*$(LD_EXT)" -print)
+LD_FLAGS_KHI  := $(FLAGS_ARCH) $(LD_LINK) $(LD_LIBS) -T $(LD_SCRIPT_KHI) -Wl,-Map,$(KHI).map
+LD_SCRIPT_KLO := $(shell find $(KLO_BASE) -name "*$(LD_EXT)" -print)
+LD_FLAGS_KLO  := $(FLAGS_ARCH) $(LD_LINK) $(LD_LIBS) -T $(LD_SCRIPT_KLO) -Wl,-Map,$(KLO).map
+NAMES         := $(APP) $(KHI) $(KLO)
+BINFILES      := $(addsuffix .lst,$(NAMES)) $(addsuffix .bin,$(NAMES)) $(addsuffix .hex,$(NAMES)) $(addsuffix .coe,$(NAMES))
+TEST_NAME     ?=
+UPDATED       :=
+
+pad_len = $(if $(findstring $(APP),$(1)),$(PAD_KB_APP),$(if $(findstring $(KHI),$(1)),$(PAD_KB_KHI),$(PAD_KB_KLO)))
+
+# Set quiet
+ifeq ($(QUIET),no)
+	REDIR     :=
+else
+    REDIR     := > /dev/null 2>&1
+endif
+
+.PHONY: all app khi klo binfiles clean
+
+all: binfiles
+
+binfiles: $(BINFILES)
+	$(if $(UPDATED),@echo '[Build]       $(TEST_NAME)')
+
+%.lst: %
+	$(eval UPDATED:=1)
+	@echo '[LST] $@' $(REDIR)
+	@$(MIPS_BIN)/$(ARCHITECTURE)-objdump -d -S $* > $@
+
+%.bin: %
+	$(eval UPDATED:=1)
+	@echo '[BIN] $@' $(REDIR)
+	@$(MIPS_BIN)/$(ARCHITECTURE)-objcopy -O binary $* $@
+
+%.hex: %.bin
+	$(eval UPDATED:=1)
+	@echo '[HEX] $@, $@.tsv' $(REDIR)
+	$(UTIL_BASE)/make_hex/make_hex -w $(RADIX_B) -p $(call pad_len,$@) $*.bin $@
+	@cat $*.hex | sed 's/.\{8\}/&\t/g' > $*.hex.tsv
+
+%.coe: %.bin
+	$(eval UPDATED:=1)
+	@echo '[COE] $@' $(REDIR)
+	@$(UTIL_BASE)/make_hex/make_hex -c -w $(RADIX_B) -p $(call pad_len,$@) $*.bin $@
+
+app: $(APP)
+
+$(APP): $(CSRC_OBJS_APP) $(MASM_OBJS_APP)
+	@echo '[LD]  $@, $@.map' $(REDIR)
+	@$(MIPS_CC) $(CSRC_OBJS_APP) $(MASM_OBJS_APP) $(LD_FLAGS_APP) -o $(APP)
+
+khi: $(KHI)
+
+$(KHI): $(CSRC_OBJS_KHI) $(MASM_OBJS_KHI)
+	$(eval UPDATED:=1)
+	@echo '[LD]  $@, $@.map' $(REDIR)
+	@$(MIPS_CC) $(CSRC_OBJS_KHI) $(MASM_OBJS_KHI) $(LD_FLAGS_KHI) -o $(KHI)
+
+klo: $(KLO)
+
+$(KLO): $(CSRC_OBJS_KLO) $(MASM_OBJS_KLO)
+	@echo '[LD]  $@, $@.map' $(REDIR)
+	@$(MIPS_CC) $(CSRC_OBJS_KLO) $(MASM_OBJS_KLO) $(LD_FLAGS_KLO) -o $(KLO)
+
+$(CSRC_OBJS): $(BUILD_BASE)/%.o: % | $(BLD_DIRS)
+	@echo '[CC]  $<' $(REDIR)
+	@$(MIPS_CC) $(INC_DIRS) $(FLAGS_ARCH) $(FLAGS_LANG) $(FLAGS_OPT) -MD -MP -c -o $@ $<
+
+$(MASM_OBJS): $(BUILD_BASE)/%.o: % | $(BLD_DIRS)
+	@echo '[AS]  $<' $(REDIR)
+	@$(MIPS_CC) $(INC_DIRS) $(FLAGS_ARCH) -x assembler -c -o $@ $<
+
+$(BLD_DIRS):
+	@mkdir -p $@
+
+clean:
+ifeq ($(SOURCE_BASE),$(BUILD_BASE))
+	@rm -f $(CSRC_OBJS) $(MASM_OBJS) $(CSRC_DEPS) $(BINFILES)
+else
+	@rm -rf $(BINFILES) $(BUILD_BASE)
+endif
+
+-include $(CSRC_DEPS)

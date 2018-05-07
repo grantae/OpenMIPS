@@ -1,0 +1,18 @@
+README for MIPS32r1 Cache/TLB Software
+======================================
+
+This directory contains software tests, utilities, and instructions
+for building a gcc-based cross-compiler toolchain. It supports the
+entire design flow from C source code to running on real hardware.
+
+
+Directory Organization
+----------------------
+    README:         This README file.
+    gcc-mips/:      Instructions for building a cross-compiler toolchain.
+    regdiff/:       A utility to find the differences in architectural state
+                    between two execution dumps. This is useful for pinpointing
+                    where a failing test diverges. This utility is used in
+                    conjunction with the 'make rtrace_<test_name>' targets for
+                    the macro testsuite.
+    util/:          Utilities for generating BRAM initialization data.

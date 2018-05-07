@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="/home/user/root/proj/mips32/mips32_cache/Top_Tester_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="Top_Tester" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="15" />
+   <wvobject fp_name="/Top_Tester/uut/clock" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clock</obj_property>
+      <obj_property name="ObjectShortName">clock</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Top_Tester/uut/PLL_Locked" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">PLL_Locked</obj_property>
+      <obj_property name="ObjectShortName">PLL_Locked</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Top_Tester/reset_n" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset_n</obj_property>
+      <obj_property name="ObjectShortName">reset_n</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Top_Tester/uut/reset" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="group13" type="group">
+      <obj_property name="label">Program Counter</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/Top_Tester/uut/MIPS32/PC/enable" type="logic" db_ref_id="1">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">enable</obj_property>
+         <obj_property name="ObjectShortName">enable</obj_property>
+         <obj_property name="label">PC Enable</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Top_Tester/uut/MIPS32/ID_PCSrc" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">ID_PCSrc[1:0]</obj_property>
+         <obj_property name="ObjectShortName">ID_PCSrc[1:0]</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Top_Tester/uut/MIPS32/ID_PCSrc_Exc" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">ID_PCSrc_Exc</obj_property>
+         <obj_property name="ObjectShortName">ID_PCSrc_Exc</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Top_Tester/uut/MIPS32/IF_PCIn" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">IF_PCIn[31:0]</obj_property>
+         <obj_property name="ObjectShortName">IF_PCIn[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Top_Tester/uut/MIPS32/IF_PCOut" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">IF_PCOut[31:0]</obj_property>
+         <obj_property name="ObjectShortName">IF_PCOut[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Top_Tester/uut/MIPS32/InstMem_Address" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">InstMem_Address[29:0]</obj_property>
+         <obj_property name="ObjectShortName">InstMem_Address[29:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/Top_Tester/uut/MIPS32/InstMem_In" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">InstMem_In[31:0]</obj_property>
+      <obj_property name="ObjectShortName">InstMem_In[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Top_Tester/uut/MIPS32/ID_Address" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">ID_Address[31:0]</obj_property>
+      <obj_property name="ObjectShortName">ID_Address[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Top_Tester/uut/MIPS32/Instruction" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">Instruction[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Instruction[31:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/Top_Tester/uut/MIPS32/InstMem_Ready" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">InstMem_Ready</obj_property>
+      <obj_property name="ObjectShortName">InstMem_Ready</obj_property>
+   </wvobject>
+   <wvobject fp_name="group24" type="group">
+      <obj_property name="label">ICache</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/Top_Tester/uut/ICache/state" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">state[4:0]</obj_property>
+         <obj_property name="ObjectShortName">state[4:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Top_Tester/uut/ICache/prior_data" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">prior_data[31:0]</obj_property>
+         <obj_property name="ObjectShortName">prior_data[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Top_Tester/uut/ICache/using_prior_data" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">using_prior_data</obj_property>
+         <obj_property name="ObjectShortName">using_prior_data</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Top_Tester/uut/ICache/fill_address" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">fill_address[29:0]</obj_property>
+         <obj_property name="ObjectShortName">fill_address[29:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Top_Tester/uut/ICache/read_fill_address" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">read_fill_address</obj_property>
+         <obj_property name="ObjectShortName">read_fill_address</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Top_Tester/uut/ICache/queue_addr" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">queue_addr[29:0]</obj_property>
+         <obj_property name="ObjectShortName">queue_addr[29:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Top_Tester/uut/ICache/using_queue_addr" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">using_queue_addr</obj_property>
+         <obj_property name="ObjectShortName">using_queue_addr</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Top_Tester/uut/ICache/Read_M" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">Read_M</obj_property>
+         <obj_property name="ObjectShortName">Read_M</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Top_Tester/uut/ICache/DataIn_M" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">DataIn_M[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DataIn_M[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Top_Tester/uut/ICache/DataInReady_M" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">DataInReady_M</obj_property>
+         <obj_property name="ObjectShortName">DataInReady_M</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Top_Tester/uut/MIPS32/InstMem_Read" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">InstMem_Read</obj_property>
+         <obj_property name="ObjectShortName">InstMem_Read</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Top_Tester/uut/ICache/DataOut_P" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">DataOut_P[31:0]</obj_property>
+         <obj_property name="ObjectShortName">DataOut_P[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Top_Tester/uut/ICache/Set_A/WordOut" type="array" db_ref_id="1">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">WordOut[31:0]</obj_property>
+         <obj_property name="ObjectShortName">WordOut[31:0]</obj_property>
+         <obj_property name="label">SetA WordOut[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Top_Tester/uut/ICache/index" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">index[5:0]</obj_property>
+         <obj_property name="ObjectShortName">index[5:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Top_Tester/uut/ICache/offset" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">offset[1:0]</obj_property>
+         <obj_property name="ObjectShortName">offset[1:0]</obj_property>
+         <obj_property name="Radix">BINARYRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Top_Tester/uut/ICache/Set_A/fill_we" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">fill_we[15:0]</obj_property>
+         <obj_property name="ObjectShortName">fill_we[15:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Top_Tester/uut/ICache/SetA_Hit" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">SetA_Hit</obj_property>
+         <obj_property name="ObjectShortName">SetA_Hit</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Top_Tester/uut/ICache/Set_A/tag_write" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">tag_write</obj_property>
+         <obj_property name="ObjectShortName">tag_write</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Top_Tester/uut/ICache/Set_A/tag_valid" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">tag_valid</obj_property>
+         <obj_property name="ObjectShortName">tag_valid</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group33" type="group">
+      <obj_property name="label">Stages</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/Top_Tester/uut/MIPS32/ID_RestartPC" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">ID_RestartPC[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ID_RestartPC[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Top_Tester/uut/MIPS32/EX_RestartPC" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">EX_RestartPC[31:0]</obj_property>
+         <obj_property name="ObjectShortName">EX_RestartPC[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Top_Tester/uut/MIPS32/M_RestartPC" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">M_RestartPC[31:0]</obj_property>
+         <obj_property name="ObjectShortName">M_RestartPC[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group37" type="group">
+      <obj_property name="label">Stalls</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/Top_Tester/uut/MIPS32/WB_Stall" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">WB_Stall</obj_property>
+         <obj_property name="ObjectShortName">WB_Stall</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Top_Tester/uut/MIPS32/M_Stall" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">M_Stall</obj_property>
+         <obj_property name="ObjectShortName">M_Stall</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Top_Tester/uut/MIPS32/M_Stall_Controller" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">M_Stall_Controller</obj_property>
+         <obj_property name="ObjectShortName">M_Stall_Controller</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Top_Tester/uut/MIPS32/EX_Stall" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">EX_Stall</obj_property>
+         <obj_property name="ObjectShortName">EX_Stall</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Top_Tester/uut/MIPS32/ID_Stall" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">ID_Stall</obj_property>
+         <obj_property name="ObjectShortName">ID_Stall</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Top_Tester/uut/MIPS32/ID_Hazard_Stall" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">ID_Hazard_Stall</obj_property>
+         <obj_property name="ObjectShortName">ID_Hazard_Stall</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Top_Tester/uut/MIPS32/ID_Miss_Stall" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">ID_Miss_Stall</obj_property>
+         <obj_property name="ObjectShortName">ID_Miss_Stall</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Top_Tester/uut/MIPS32/IF_Stall" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">IF_Stall</obj_property>
+         <obj_property name="ObjectShortName">IF_Stall</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Top_Tester/uut/MIPS32/IF_Exception_Stall" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">IF_Exception_Stall</obj_property>
+         <obj_property name="ObjectShortName">IF_Exception_Stall</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Top_Tester/uut/MIPS32/IF_Flush" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">IF_Flush</obj_property>
+         <obj_property name="ObjectShortName">IF_Flush</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Top_Tester/uut/MIPS32/ID_Mask" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">ID_Mask</obj_property>
+         <obj_property name="ObjectShortName">ID_Mask</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Top_Tester/uut/MIPS32/ID_Enable" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">ID_Enable</obj_property>
+         <obj_property name="ObjectShortName">ID_Enable</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group45" type="group">
+      <obj_property name="label">Forwards</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/Top_Tester/uut/MIPS32/ID_RsFwdSel" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">ID_RsFwdSel[1:0]</obj_property>
+         <obj_property name="ObjectShortName">ID_RsFwdSel[1:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Top_Tester/uut/MIPS32/ID_RtFwdSel" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">ID_RtFwdSel[1:0]</obj_property>
+         <obj_property name="ObjectShortName">ID_RtFwdSel[1:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Top_Tester/uut/MIPS32/EX_RsFwdSel" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">EX_RsFwdSel[1:0]</obj_property>
+         <obj_property name="ObjectShortName">EX_RsFwdSel[1:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Top_Tester/uut/MIPS32/EX_RtFwdSel" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">EX_RtFwdSel[1:0]</obj_property>
+         <obj_property name="ObjectShortName">EX_RtFwdSel[1:0]</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Top_Tester/uut/MIPS32/M_WriteDataFwdSel" type="logic" db_ref_id="1">
+         <obj_property name="ElementShortName">M_WriteDataFwdSel</obj_property>
+         <obj_property name="ObjectShortName">M_WriteDataFwdSel</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group51" type="group">
+      <obj_property name="label">Registers</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/Top_Tester/uut/MIPS32/RegisterFile/registers[1]" type="array" db_ref_id="1">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">[1,31:0]</obj_property>
+         <obj_property name="ObjectShortName">registers[1,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="label">at (1)</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Top_Tester/uut/MIPS32/RegisterFile/registers[2]" type="array" db_ref_id="1">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">[2,31:0]</obj_property>
+         <obj_property name="ObjectShortName">registers[2,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="label">v0 (2)</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Top_Tester/uut/MIPS32/RegisterFile/registers[3]" type="array" db_ref_id="1">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">[3,31:0]</obj_property>
+         <obj_property name="ObjectShortName">registers[3,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="label">v1 (3)</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Top_Tester/uut/MIPS32/RegisterFile/registers[4]" type="array" db_ref_id="1">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">[4,31:0]</obj_property>
+         <obj_property name="ObjectShortName">registers[4,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="label">a0 (4)</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Top_Tester/uut/MIPS32/RegisterFile/registers[5]" type="array" db_ref_id="1">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">[5,31:0]</obj_property>
+         <obj_property name="ObjectShortName">registers[5,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="label">a1 (5)</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Top_Tester/uut/MIPS32/RegisterFile/registers[6]" type="array" db_ref_id="1">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">[6,31:0]</obj_property>
+         <obj_property name="ObjectShortName">registers[6,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="label">a2 (6)</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Top_Tester/uut/MIPS32/RegisterFile/registers[7]" type="array" db_ref_id="1">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">[7,31:0]</obj_property>
+         <obj_property name="ObjectShortName">registers[7,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="label">a3 (7)</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Top_Tester/uut/MIPS32/RegisterFile/registers[8]" type="array" db_ref_id="1">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">[8,31:0]</obj_property>
+         <obj_property name="ObjectShortName">registers[8,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="label">t0 (8)</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Top_Tester/uut/MIPS32/RegisterFile/registers[9]" type="array" db_ref_id="1">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">[9,31:0]</obj_property>
+         <obj_property name="ObjectShortName">registers[9,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="label">t1 (9)</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Top_Tester/uut/MIPS32/RegisterFile/registers[10]" type="array" db_ref_id="1">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">[10,31:0]</obj_property>
+         <obj_property name="ObjectShortName">registers[10,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="label">t2 (10)</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Top_Tester/uut/MIPS32/RegisterFile/registers[11]" type="array" db_ref_id="1">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">[11,31:0]</obj_property>
+         <obj_property name="ObjectShortName">registers[11,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="label">t3 (11)</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Top_Tester/uut/MIPS32/RegisterFile/registers[12]" type="array" db_ref_id="1">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">[12,31:0]</obj_property>
+         <obj_property name="ObjectShortName">registers[12,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="label">t4 (12)</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Top_Tester/uut/MIPS32/RegisterFile/registers[13]" type="array" db_ref_id="1">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">[13,31:0]</obj_property>
+         <obj_property name="ObjectShortName">registers[13,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="label">t5 (13)</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Top_Tester/uut/MIPS32/RegisterFile/registers[14]" type="array" db_ref_id="1">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">[14,31:0]</obj_property>
+         <obj_property name="ObjectShortName">registers[14,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="label">t6 (14)</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Top_Tester/uut/MIPS32/RegisterFile/registers[15]" type="array" db_ref_id="1">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">[15,31:0]</obj_property>
+         <obj_property name="ObjectShortName">registers[15,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="label">t7 (15)</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Top_Tester/uut/MIPS32/RegisterFile/registers[16]" type="array" db_ref_id="1">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">[16,31:0]</obj_property>
+         <obj_property name="ObjectShortName">registers[16,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="label">s0 (16)</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Top_Tester/uut/MIPS32/RegisterFile/registers[17]" type="array" db_ref_id="1">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">[17,31:0]</obj_property>
+         <obj_property name="ObjectShortName">registers[17,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="label">s1 (17)</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Top_Tester/uut/MIPS32/RegisterFile/registers[18]" type="array" db_ref_id="1">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">[18,31:0]</obj_property>
+         <obj_property name="ObjectShortName">registers[18,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="label">s2 (18)</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Top_Tester/uut/MIPS32/RegisterFile/registers[19]" type="array" db_ref_id="1">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">[19,31:0]</obj_property>
+         <obj_property name="ObjectShortName">registers[19,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="label">s3 (19)</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Top_Tester/uut/MIPS32/RegisterFile/registers[20]" type="array" db_ref_id="1">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">[20,31:0]</obj_property>
+         <obj_property name="ObjectShortName">registers[20,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="label">s4 (20)</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Top_Tester/uut/MIPS32/RegisterFile/registers[21]" type="array" db_ref_id="1">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">[21,31:0]</obj_property>
+         <obj_property name="ObjectShortName">registers[21,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="label">s5 (21)</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Top_Tester/uut/MIPS32/RegisterFile/registers[22]" type="array" db_ref_id="1">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">[22,31:0]</obj_property>
+         <obj_property name="ObjectShortName">registers[22,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="label">s6 (22)</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Top_Tester/uut/MIPS32/RegisterFile/registers[23]" type="array" db_ref_id="1">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">[23,31:0]</obj_property>
+         <obj_property name="ObjectShortName">registers[23,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="label">s7 (23)</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Top_Tester/uut/MIPS32/RegisterFile/registers[24]" type="array" db_ref_id="1">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">[24,31:0]</obj_property>
+         <obj_property name="ObjectShortName">registers[24,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="label">t8 (24)</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Top_Tester/uut/MIPS32/RegisterFile/registers[25]" type="array" db_ref_id="1">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">[25,31:0]</obj_property>
+         <obj_property name="ObjectShortName">registers[25,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="label">t9 (25)</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Top_Tester/uut/MIPS32/RegisterFile/registers[26]" type="array" db_ref_id="1">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">[26,31:0]</obj_property>
+         <obj_property name="ObjectShortName">registers[26,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="label">k0 (26)</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Top_Tester/uut/MIPS32/RegisterFile/registers[27]" type="array" db_ref_id="1">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">[27,31:0]</obj_property>
+         <obj_property name="ObjectShortName">registers[27,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="label">k1 (27)</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Top_Tester/uut/MIPS32/RegisterFile/registers[28]" type="array" db_ref_id="1">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">[28,31:0]</obj_property>
+         <obj_property name="ObjectShortName">registers[28,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="label">gp (28)</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Top_Tester/uut/MIPS32/RegisterFile/registers[29]" type="array" db_ref_id="1">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">[29,31:0]</obj_property>
+         <obj_property name="ObjectShortName">registers[29,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="label">sp (29)</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Top_Tester/uut/MIPS32/RegisterFile/registers[30]" type="array" db_ref_id="1">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">[30,31:0]</obj_property>
+         <obj_property name="ObjectShortName">registers[30,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="label">fp (30)</obj_property>
+      </wvobject>
+      <wvobject fp_name="/Top_Tester/uut/MIPS32/RegisterFile/registers[31]" type="array" db_ref_id="1">
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="ElementShortName">[31,31:0]</obj_property>
+         <obj_property name="ObjectShortName">registers[31,31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+         <obj_property name="label">ra (31)</obj_property>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group74" type="group">
+      <obj_property name="label">CP0</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="/Top_Tester/uut/MIPS32/ID_ExceptionPC" type="array" db_ref_id="1">
+         <obj_property name="ElementShortName">ID_ExceptionPC[31:0]</obj_property>
+         <obj_property name="ObjectShortName">ID_ExceptionPC[31:0]</obj_property>
+         <obj_property name="Radix">HEXRADIX</obj_property>
+      </wvobject>
+   </wvobject>
+</wave_config>

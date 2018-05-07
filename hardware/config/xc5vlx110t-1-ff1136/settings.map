@@ -1,0 +1,1 @@
+-w -logic_opt on -ol high -t 1 -register_duplication on -global_opt off -mt 2 -cm area -ir off -pr off -lc off -power off

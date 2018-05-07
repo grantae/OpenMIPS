@@ -1,0 +1,104 @@
+--- sbrkr.c	2017-08-25 12:53:45.092655270 -0700
++++ sbrkr.c.new	2017-08-25 15:34:53.247829106 -0700
+@@ -3,6 +3,7 @@
+ #include <reent.h>
+ #include <unistd.h>
+ #include <_syslist.h>
++#include <errno.h>
+ 
+ /* Some targets provides their own versions of these functions.  Those
+    targets should define REENTRANT_SYSCALLS_PROVIDED in TARGET_CFLAGS.  */
+@@ -46,6 +47,86 @@
+ 	<<errno>>.
+ */
+ 
++/* Attempt to acquire a mutex, but don't block if it's already locked.
++ * A mutex is unlocked if the word is 0, and locked otherwise.
++ * This requires the 'll' and 'sc' MIPS instructions.
++ */
++static inline int mutex_try_lock(int *mutex)
++{
++    int val, tmp, locked;
++    asm volatile(
++        ".set noreorder\n\t"
++        "li %[locked], 0\n\t"
++        "$test_and_set_%=:\n\t"
++        "ll %[val], 0(%[mutex])\n\t"
++        "bnez %[val], $done_%=\n\t"
++        "li %[tmp], 0x1\n\t"
++        "sc %[tmp], 0(%[mutex])\n\t"
++        "beqz %[tmp], $test_and_set_%=\n\t"
++        "nop\n\t"
++        "li %[locked], 0x1\n\t"
++        "$done_%=:\n\t"
++        ".set reorder\n\t"
++        : [val] "=&r" (val), [tmp] "=&r" (tmp), [locked] "=&r" (locked)
++        : [mutex] "r" (mutex)
++        : "memory"
++    );
++    return locked;
++}
++
++/* Release a mutex lock */
++static inline void mutex_unlock(int *mutex)
++{
++    *mutex = 0;
++}
++
++void *_sbrk_r(struct _reent *ptr, ptrdiff_t incr)
++{
++    static int mutex;
++    static char *end;
++    char *start;
++    char *heap_start, *heap_end;
++
++    /* By using e.g., 'extern char _heap_start', the compiler tries to use a
++     * gp offset by defining the symbol as R_MIPS_GPREL16, but the heap end
++     * address can be greater than 64 KiB past the value of gp. Without knowing
++     * a better way around this, manually load the symbols in assembly instead.
++     *
++     * NOTE: '_heap_start' and '_heap_end' must be defined by the application's
++     * linker script or else it will fail to link!
++     */
++    asm volatile(
++        "la %[start_h], _heap_start\n\t"
++        "la %[end_h], _heap_end\n\t"
++        : [start_h] "=r" (heap_start), [end_h] "=r" (heap_end)
++        :
++        :
++    );
++
++    /* The (prior) program break is a process-wide value, so it is insufficient
++     * to keep per-thread state for it. Instead, to achieve reentrancy, attempt
++     * to attain a lock (non-blocking to avoid deadlock) before updating.
++     */
++    if (mutex_try_lock(&mutex)) {
++        if (end == NULL) {
++            end = heap_start;
++        }
++        start = end;
++        if ((end + incr) > heap_end) {
++            ptr->_errno = ENOMEM;
++            start = (char *)-1;
++        } else {
++            end += incr;
++        }
++        mutex_unlock(&mutex);
++    } else {
++        ptr->_errno = EAGAIN; /* Non-std: Using to show resource contention */
++        start = (char *)-1;
++    }
++    return start;
++}
++
++/*
+ void *
+ _DEFUN (_sbrk_r, (ptr, incr),
+      struct _reent *ptr _AND
+@@ -59,5 +140,6 @@
+     ptr->_errno = errno;
+   return ret;
+ }
++*/
+ 
+ #endif /* ! defined (REENTRANT_SYSCALLS_PROVIDED) */

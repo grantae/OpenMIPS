@@ -1,0 +1,81 @@
+Instructions for Creating a MIPS Compiler Toolchain Manually
+------------------------------------------------------------
+
+To automatically build these tools, use the Makefile included in this
+directory.
+
+If you don't want to build everything automatically...
+
+These instructions show you how to build the toolchain manually.
+You probably don't need or want to do this!
+
+These are instructions for creating a MIPS cross-compiler toolchain based on
+GCC 4.9.1, Binutils 2.24, and Newlib 2.1.0. (Note that these are older than
+the packages in the Makefile; you can adapt to use those as well.)
+
+
+Required Files
+--------------
+
+  - binutils-2.24.tar.bz2   (http://ftp.gnu.org/gnu/binutils/)
+  - gcc-4.9.1.tar.bz2       (http://gcc.gnu.org/mirrors.html)
+  - mpfr-3.1.2.tar.bz2      (http://www.mpfr.org/mpfr-3.1.2/)
+  - mpc-1.0.2.tar.gz        (http://www.multiprecision.org/)
+  - gmp-6.0.0a.tar.bz2      (http://gmplib.org/)
+  - newlib-2.1.0.tar.gz     (ftp://sources.redhat.com/pub/newlib/index.html)
+
+
+Environment Requirements
+------------------------
+
+  - Linux, BSD, Cygwin, or another Unix-like environment.
+  - Recent compiler tools (tested with GCC 4.x series).
+  - Bash or a bash-like shell (or adjust the instructions below).
+
+
+Procedure
+---------
+
+Note that PREFIX is the location in which you will install the MIPS compiler
+and other tools. You can modify it to be anything you like.
+
+
+1. Set environment variables:
+    export TARGET=mips-elf
+    export PREFIX=[any directory]/mips32/mips_tc
+    export PATH=$PATH:$PREFIX/bin
+
+2. Unpack everything:
+    bzip2 -dc binutils-2.24.tar.bz2 | tar xf -
+    bzip2 -dc gcc-4.9.1.tar.bz2 | tar xf -
+    bzip2 -dc mpfr-3.1.2.tar.bz2 | tar xf -
+    bzip2 -dc gmp-6.0.0a.tar.bz2 | tar xf -
+    gzip -dc mpc-1.0.2.tar.gz | tar xf -
+    gzip -dc newlib-2.1.0.tar.gz | tar xf -
+
+3. Move (or symlink) GCC dependency packages
+    mv gmp-6.0.0a gcc-4.9.1/gmp
+    mv mpc-1.0.2 gcc-4.9.1/mpc
+    mv mpfr-3.1.2 gcc-4.9.1/mpfr
+    mv newlib-2.1.0/newlib gcc-4.9.1/newlib
+    mv newlib-2.1.0/libgloss gcc-4.9.1/libgloss
+
+4. Build binutils:
+    mkdir binutils-build && cd binutils-build
+    ../binutils-2.24/configure --prefix=$PREFIX --target=$TARGET --disable-nls
+    make
+    make install
+    cd ..
+
+5. Build gcc:
+    mkdir gcc-build && cd gcc-build
+    ../gcc-4.9.1/configure --prefix=$PREFIX --target=$TARGET --with-newlib \
+    --without-headers --with-gnu-ld --with-gnu-as --disable-libssp \
+    --disable-nls --enable-c99 --enable-long-long --enable-languages=c
+    make
+    make install
+    cd ..
+
+At this point you have a complete toolchain located at $PREFIX.
+After modifying the Makefiles of the software demos to point to $PREFIX
+you should be able to compile them.

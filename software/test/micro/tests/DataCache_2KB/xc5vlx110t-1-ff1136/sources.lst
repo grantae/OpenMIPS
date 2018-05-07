@@ -1,0 +1,12 @@
+*FILL*/MIPS32/Cache/DCache/DataCache_2KB.v
+*FILL*/MIPS32/Cache/DCache/Set_RW_128x64.v
+*FILL*/MIPS32/Cache/DCache/TagFlagRam_RW_64.v
+*FILL*/Common/RAM/RAM_SP_ZI.v
+*FILL*/Common/FIFO/FIFO.v
+*FILL*/Common/SRAM.v
+*FILL*/SoC/MainMemory/MainMemory.v
+*FILL*/Common/RAM/RAM_TDP.v
+*FILL*/Common/DFF_E.v
+*FILL*/Common/DFF_SRE.v
+*FILL*/Xilinx/xc5vlx110t-1-ff1136/Cores/BRAM_32x256_128x64_TDP_BE/BRAM_32x256_128x64_TDP_BE.xco
+tests/DataCache_2KB/DataCache_2KB_test.v

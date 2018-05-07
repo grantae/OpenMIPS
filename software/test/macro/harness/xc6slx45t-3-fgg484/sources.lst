@@ -1,0 +1,73 @@
+# The token '*FILL*' is the HDL source directory which is unknown in this file.
+# All other paths are relative to the simulation root where the Makefile is located.
+
+# Test harness
+harness/mips_test.v
+*FILL*/SoC/MainMemory/MainMemory.v
+
+# MIPS top
+*FILL*/MIPS32/Core/MIPS_Defines.v
+*FILL*/MIPS32/MIPS32.v
+
+# Caches
+*FILL*/MIPS32/Cache/ICache/InstructionCache_8KB.v
+*FILL*/MIPS32/Cache/ICache/Set_RO_128x256.v
+*FILL*/MIPS32/Cache/ICache/TagFlagRam_RO_256.v
+*FILL*/MIPS32/Cache/DCache/DataCache_2KB.v
+*FILL*/MIPS32/Cache/DCache/Set_RW_128x64.v
+*FILL*/MIPS32/Cache/DCache/TagFlagRam_RW_64.v
+
+# Processor
+*FILL*/MIPS32/Core/Processor.v
+*FILL*/MIPS32/Core/Add.v
+*FILL*/MIPS32/Core/RegisterFile.v
+*FILL*/MIPS32/Core/Control.v
+*FILL*/MIPS32/Core/Compare.v
+*FILL*/MIPS32/Core/Hazard_Detection.v
+*FILL*/MIPS32/Core/CPZero.v
+*FILL*/MIPS32/Core/CP0_Registers.v
+*FILL*/MIPS32/Core/TLB_16.v
+*FILL*/MIPS32/Core/TLB_CAM_DP_16.v
+*FILL*/MIPS32/Core/TLB_CAM_Entry_DP.v
+*FILL*/MIPS32/Core/EvenOddPage.v
+*FILL*/MIPS32/Core/ALU.v
+*FILL*/MIPS32/Core/Divide.v
+*FILL*/MIPS32/Core/MemControl.v
+*FILL*/MIPS32/Core/ReadDataControl.v
+*FILL*/MIPS32/Core/TrapDetect.v
+*FILL*/MIPS32/Core/F1_Stage.v
+*FILL*/MIPS32/Core/F2_Stage.v
+*FILL*/MIPS32/Core/D1_Stage.v
+*FILL*/MIPS32/Core/D2_Stage.v
+*FILL*/MIPS32/Core/X1_Stage.v
+*FILL*/MIPS32/Core/M1_Stage.v
+*FILL*/MIPS32/Core/M2_Stage.v
+*FILL*/MIPS32/Core/W1_Stage.v
+
+# Common
+*FILL*/Common/PriorityEncoder_16x4.v
+*FILL*/Common/RAM/RAM_SP_ZI.v
+*FILL*/Common/RAM/RAM_TDP.v
+*FILL*/Common/RAM/RAM_TDP_ZI.v
+*FILL*/Common/RAM/RAM_TDP_UI.v
+*FILL*/Common/Register.v
+*FILL*/Common/Mux4.v
+*FILL*/Common/Mux2.v
+*FILL*/Common/FIFO/FIFO.v
+*FILL*/Common/SRAM.v
+*FILL*/Common/DFF_SRE.v
+*FILL*/Common/DFF_E.v
+
+# Xilinx cores
+*FILL*/Xilinx/xc6slx45t-3-fgg484/Cores/BRAM_32x1024_SDP/BRAM_32x1024_SDP.xco
+*FILL*/Xilinx/xc6slx45t-3-fgg484/Cores/BRAM_32x256_128x64_TDP_BE/BRAM_32x256_128x64_TDP_BE.xco
+
+# DSP Fused Multiply/Add
+*FILL*/Xilinx/xc6slx45t-3-fgg484/MAddSub/DSP_MAddSub_32x32x64.v
+*FILL*/Xilinx/xc6slx45t-3-fgg484/MAddSub/DSP_Mult_32x32_BLAL.v
+*FILL*/Xilinx/xc6slx45t-3-fgg484/MAddSub/DSP_Mult_32x32_BLAH.v
+*FILL*/Xilinx/xc6slx45t-3-fgg484/MAddSub/DSP_Mult_32x32_BHAL.v
+*FILL*/Xilinx/xc6slx45t-3-fgg484/MAddSub/DSP_Mult_32x32_BHAH.v
+*FILL*/Xilinx/xc6slx45t-3-fgg484/MAddSub/DSP_AddSub_64x64_Lo.v
+*FILL*/Xilinx/xc6slx45t-3-fgg484/MAddSub/DSP_AddSub_64x64_Hi.v
+

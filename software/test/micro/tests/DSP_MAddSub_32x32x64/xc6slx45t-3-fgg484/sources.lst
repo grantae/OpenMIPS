@@ -1,0 +1,8 @@
+tests/DSP_MAddSub_32x32x64/DSP_MAddSub_32x32x64_test.v
+*FILL*/Xilinx/xc6slx45t-3-fgg484/MAddSub/DSP_MAddSub_32x32x64.v
+*FILL*/Xilinx/xc6slx45t-3-fgg484/MAddSub/DSP_Mult_32x32_BLAL.v
+*FILL*/Xilinx/xc6slx45t-3-fgg484/MAddSub/DSP_Mult_32x32_BLAH.v
+*FILL*/Xilinx/xc6slx45t-3-fgg484/MAddSub/DSP_Mult_32x32_BHAL.v
+*FILL*/Xilinx/xc6slx45t-3-fgg484/MAddSub/DSP_Mult_32x32_BHAH.v
+*FILL*/Xilinx/xc6slx45t-3-fgg484/MAddSub/DSP_AddSub_64x64_Lo.v
+*FILL*/Xilinx/xc6slx45t-3-fgg484/MAddSub/DSP_AddSub_64x64_Hi.v
