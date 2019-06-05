@@ -1,7 +1,8 @@
 # OpenMIPS Processor
 
 
-This is an implementation of the **MIPS32 Release 1** architecture.
+This is an implementation of the **MIPS32 Release 1** architecture, written
+in Verilog.
 
 This processor is ISA-compliant and fully synthesizeable. It has a 32-bit
 virtual address space and supports up to 36 bits of physical memory (64 GiB).
@@ -138,20 +139,20 @@ See the FAQ below for more information.
 
 ## Frequently-Asked Questions (FAQ):
 1. [Processor questions](#processor-questions)
-    1. [Which instructions are supported?](#which-instructions-are-supported?)
-    2. [Are interrupts and exceptions supported?](#are-interrupts-and-exceptions-supported?)
-    3. [Can this processor run Linux?](#can-this-processor-run-linux?)
+    1. [Which instructions are supported?](#which-instructions-are-supported)
+    2. [Are interrupts and exceptions supported?](#are-interrupts-and-exceptions-supported)
+    3. [Can this processor run Linux?](#can-this-processor-run-linux)
 2. [Verification questions](#verification-questions)
-    1. [How do I run a single test?](#how-do-i-run-a-single-test?)
-    2. [How do I create an instruction trace for a test?](#how-do-i-create-an-instruction-trace-for-a-test?)
-    3. [How do I create a register trace for a test?](#how-do-i-create-a-register-trace-for-a-test?)
-    4. [How do I view the waveform for a test?](#how-do-i-view-the-waveform-for-a-test?)
+    1. [How do I run a single test?](#how-do-i-run-a-single-test)
+    2. [How do I create an instruction trace for a test?](#how-do-i-create-an-instruction-trace-for-a-test)
+    3. [How do I create a register trace for a test?](#how-do-i-create-a-register-trace-for-a-test)
+    4. [How do I view the waveform for a test?](#how-do-i-view-the-waveform-for-a-test)
 3. [Usage questions](#usage-questions)
-    1. [How much of the design is vendor-independent?](#how-much-of-the-design-is-vendor-independent?)
-    2. [Which device parts are supported for vendor-dependent modules?](#which-device-parts-are-supported-for-vendor-independent-modules?)
-    3. [How do I import the MIPS design into my own project?](#how-do-i-import-the-mips-design-into-my-own-project?)
-    4. [What is the 'PABITS' parameter in the top-level MIPS module?](#what-is-the-pabits-parameter-in-the-top-level-mips-module?)
-    5. [Why is there a synthesis warning for an unconnected block?](#why-is-there-a-synthesis-warning-for-an-unconnected-block?)
+    1. [How much of the design is vendor-independent?](#how-much-of-the-design-is-vendor-independent)
+    2. [Which device parts are supported for vendor-dependent modules?](#which-device-parts-are-supported-for-vendor-independent-modules)
+    3. [How do I import the MIPS design into my own project?](#how-do-i-import-the-mips-design-into-my-own-project)
+    4. [What is the 'PABITS' parameter in the top-level MIPS module?](#what-is-the-pabits-parameter-in-the-top-level-mips-module)
+    5. [Why is there a synthesis warning for an unconnected block?](#why-is-there-a-synthesis-warning-for-an-unconnected-block)
 
 ### Processor questions
 
